@@ -1,0 +1,43 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int n[10];
+	int index,sum,average,maxIndex,largest,smallest;
+	
+	cout << "Input 10 integers: " << endl;
+	
+	for (index=0;index<10;index++)
+		n[index]=0;
+		
+	for (index=0;index<10;index++)
+		cin >> n[index];
+		
+	sum=0;
+	for (index=0;index<10;index++)
+		sum = sum + n[index];
+	
+	average=sum/10;	
+	
+	maxIndex = 0;
+	for (index=1;index<10;index++)	
+		if (n[maxIndex] < n[index])
+			maxIndex=index;
+			largest=n[maxIndex];
+
+	for (index=1;index<10;index++)	
+		if (n[maxIndex] > n[index])
+			maxIndex=index;
+			smallest=n[maxIndex];
+	
+	cout << endl;
+				
+	cout << "Smallest Integer : " << smallest << endl;
+	cout << "Largest Integer : " << largest << endl;
+	cout << "Total = " << sum << endl;
+	cout << "Average = " << average << endl;
+
+return 0;	
+}
