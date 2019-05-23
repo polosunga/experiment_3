@@ -1,0 +1,48 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int A[7];
+	int B[7];
+	int C[7];
+	int i;
+		
+	for (i=1;i<=7;i++)
+		{
+			cout << "Province A, Day " << i << ": ";
+			cin >> A[i];
+		}
+	
+	for (i=1;i<=7;i++)
+		{
+			cout << "Province B, Day " << i << ": ";
+			cin >> B[i];
+		}
+	
+	for (i=1;i<=7;i++)
+		{
+			cout << "Province C, Day " << i << ": ";
+			cin >> C[i];
+		}
+	
+	cout << endl << endl;
+	
+	for (i=1;i<=7;i++)
+		{
+			cout << "Province A, Day " << i << "= " << A[i] << endl;
+		}
+		
+	for (i=1;i<=7;i++)
+		{
+			cout << "Province B, Day " << i << "= " << B[i] << endl;
+		}	
+		
+	for (i=1;i<=7;i++)
+		{
+			cout << "Province C, Day " << i << "= " << C[i] << endl;
+		}
+		
+	return 0;
+}
